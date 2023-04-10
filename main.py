@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np 
 import pandas as pd
-from PIL import Image
 import time
 
 st.title("Streamli 超入門")
@@ -63,8 +62,7 @@ st.map(df2)
 # チェックボックスを使用する
 st.write("画像表示")
 if st.checkbox("show image"):
-    img = Image.open("penguin.jpeg")
-    st.image(img, caption='ペンギン', use_column_width=False)
+    pass
 
 #セレクトボックスを表示する
 option = st.selectbox(
